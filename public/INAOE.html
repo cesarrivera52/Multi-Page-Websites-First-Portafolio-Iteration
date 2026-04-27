@@ -1,0 +1,106 @@
+<h1>Machine Learning Dashboard for Virtual Reality Rehabilitation</h1>
+<h2>Results x <a
+  href="https://www.inaoep.mx/">INAOE </a> </h2>
+  
+  <h3> Data Analytics / Machine Learning / Data Visualization</h3>
+
+  <h4>August - December 2024<h4>
+  
+  <hr />
+  <h3>Situation</h3>
+  This rehabilitation system combines technology with dynamic exercises, such as cleaning a virtual mirror in a virtual environment, with the objective of helping patients recover their facial movements. 
+  This virtual therapy allows them to perform real-life exercises. 
+  <br>The system includes a joystick to enable patient interaction with the VR (Virtual Reality) environment, and it also tracks the patient’s facial movements, encouraging them to complete various tasks.<br>
+    <br>
+    <img src="../assets/images/INAOE/IMG_6547.jpg" height="300" alt='Image of how the Patient interact with the VR project system'> 
+    <br>
+    <br>
+  <p>We collaborated analyzing the data behavior of 3 different patients during their time in their therapies. </p>
+  <p>The data we analyzed was a file with a content of 32 columns and 1115 rows. The 1115 rows represents the variations of the variables during the period of time while the patient was in their therapy.</p>
+  <p>The 32 variables of the file were devided as the following:</p>
+  <ul>
+    <li>Tracking Head Patients Points</li>
+    <li>Emotions that patients felt</li>
+    <li>Time of the session</li>
+    <li>Session Number</li>
+    <li>Patient ID</li>
+    <li>Session Date</li>
+  </ul>
+    As an example of the image located downwards.</p>
+  <img src="../assets/images/INAOE/Screenshot 2025-08-06 at 12.11.49 p.m..png" height="300" alt="Image of the face of the tracking points">
+  <p>
+    For more details of the main project, visit the 
+    <a href="../assets/images/INAOE/MLR_AS_ver05.pdf" target="_blank">Multi-Label Rehabilitation Paper (PDF)</a>.
+  </p>
+  
+  
+  <h3>Task</h3>
+  <p>The challange faced in this project was cleaning, interpreting, and visualizing the data of the patients in a way that could be useful for the researchers. The data was not clean, and it required a lot of preprocessing to be able to analyze it effectively. We also had to ensure that the visualizations were clear and easy to understand for the researchers.</p> 
+   <p> As a first step for this project we made a data cleaning to standarize the data and replace Null Data, after doing and automatizing the backend of the code to get the clean dataset we start the phase were we made the mock up.<br>
+   </p>
+   
+  <div id="Mock-Up-Dash" style="display:none; margin-top:20px;">
+    <img src="/assets/images/INAOE/Copia de Mock Up dashboard.jpg" alt="Mock-Up-Dash" width="600">
+  </div>
+
+  <button onclick="toggleImagen()"> Show / Hide Image</button>
+
+<div id="mi-imagen" style="display:none; margin-top:20px;">
+  <img src="/assets/images/INAOE/Copia de Mock Up dashboard.jpg" alt="Mi imagen" width="600">
+</div>
+
+<script>
+  function toggleImagen() {
+    const imagen = document.getElementById("mi-imagen");
+    if (imagen.style.display === "none" || imagen.style.display === "") {
+      imagen.style.display = "block";
+    } else {
+      imagen.style.display = "none";
+    }
+  }
+</script>
+
+  
+  <h3>Action</h3>
+  <p>At this point of the investigation we didn't have cleared what we wanted to present we had multiple hypothesis and we began analyzing in more detail the behaivor of the data in a historical way.</p>
+  <p>We made a heat map to see in a visual way how the variables relationate between them, in this case we had a heatmap that the user could select which variable to analyze to see the behaivor easier.</p>
+  <img src="../assets/images/INAOE/Action/d07c1408-dc23-4873-9364-51ea5bebbf9a.JPG" height="450" alt="Project management waterfall ">
+  <p> Once we started playing with the data we began to form our hypothesis, in this case we saw that the most related variables where they presented some advances were the variables related with their emotions. As you can see in the following image</p>
+  <img src="../assets/images/INAOE/Action/505be3e4-3100-458a-8bda-72d4cb0f9af7.JPG" height="450" alt="Project management waterfall ">
+  <p>The image presented above represents how was the distribution of the emotions between the different sessions of the patients, as you can see the emotions that were more presented were the "Motivated" (Represented as 04_M) and "Anxiety" (Represented as 02_A), this could be related with the fact that the patients felt more comfortable with the therapy and they were able to perform better in their exercises.</p>
+  
+  <h3>Results</h3>
+  <p> As a result of the great communication with the investigators, collaborators we developed an interactive dashboard capable to show in a visual way the information recollected previously, transformed and analyzed in a detailed way.</p>
+  <p>The dashboard presented also helps to synthetize the information and make it understandable even for people who are not involved in the medical environment.</p>
+  <p>We used the <a href="https://streamlit.io/" target="_blank">Streamlit</a> library to create the dashboard, which allowed us to create an interactive and user-friendly interface for the researchers.</p>
+  <p>Talking about the results found about our patient, we found some interesting patterns in the data, for example, we found that the patient over time, the tracking points of the face were closer and the gap between the paralysis was getting smaller.</p>
+  <img src="../assets/images/INAOE/Vista Dashboard.jpg" height="450" alt="Team Members of the Dashboard">
+  
+  <p>
+    Here you can find a link to the PDF manual of the dashboard, which explains how to use it, what each section means and some of the results found:
+    <a href="../assets/images/INAOE/Action/Manual del dashboard.pdf" target="_blank">
+      Dashboard Manual (PDF - Spanish Version)
+    </a>
+  </p>
+  
+  
+  
+  <h3>Team</h3>
+  <img src="../assets/images/INAOE/Analisis_de_datos.jpg" height="800" alt="Cinia Stock Managment App Developers">
+  <p>Team Members (Developers):
+    <ul>
+      <lis><a href="https://www.linkedin.com/in/cesarrivguz/">César Alejandro Rivera Guzman</a> </lis><br>
+  
+      
+      <lis>Julio Sotero</lis> <br>
+
+      <lis>Diego Soto</lis>
+      <lis> <p> Teachers: Dr. Rigoberto Cerino Jiménez & Dr. Juan Manuel Ahuactzin Larios</lis> </p>
+      <br>
+    </ul>
+
+  </p>
+
+  <h3>URL</h3>
+  <p>Github: <a href="https://github.com/SOTO729/Concentraci-n-7mo-semestre-/tree/df67ce91e340ff87bb521dca9fc7
+    d8dd2fdfe52e/RETO" >Access Code</a></p>
